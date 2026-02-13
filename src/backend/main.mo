@@ -2,7 +2,6 @@ import Map "mo:core/Map";
 import Runtime "mo:core/Runtime";
 import Iter "mo:core/Iter";
 import Time "mo:core/Time";
-import Array "mo:core/Array";
 import List "mo:core/List";
 
 actor {

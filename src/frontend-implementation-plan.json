@@ -1,32 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace INNO YOUTH logo with user-provided logo (header + footer)",
+  "title": "Correct Team member name spelling (Bennita → Benitta)",
   "requirements": [
     {
-      "id": "REQ-6",
-      "summary": "Swap the existing INNO YOUTH logo asset for the new user-provided logo and render it consistently in header and footer without stretching.",
+      "id": "REQ-8",
+      "summary": "Fix the Team section to render the team member name as “Benitta” wherever it appears.",
       "acceptanceCriteria": [
-        "A new logo image file is added under `frontend/public/assets/generated/` based on the user-uploaded logo.",
-        "`frontend/src/components/site/SiteHeader.tsx` uses the new logo asset path for the header logo image.",
-        "`frontend/src/components/site/SiteFooter.tsx` uses the new logo asset path for the footer brand image.",
-        "The logo displays crisply and is not stretched (keeps aspect ratio) on mobile and desktop."
+        "In `frontend/src/components/site/sections/TeamSection.tsx`, the team member currently rendered as “Bennita” is changed to “Benitta”.",
+        "The Team section UI renders “Benitta” everywhere the member name is displayed.",
+        "No other team member names, roles, or bios are changed."
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/generated/inno-youth-logo-v2.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated replacement logo image (transparent background) at this exact path so it can be referenced by header/footer."
-        },
-        {
-          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "path": "frontend/src/components/site/sections/TeamSection.tsx",
           "operation": "modify",
-          "description": "Update the header logo <img> to use `/assets/generated/inno-youth-logo-v2.dim_512x512.png` and ensure styling preserves aspect ratio (e.g., keep w-auto/object-contain with a fixed height) for crisp rendering across breakpoints."
-        },
-        {
-          "path": "frontend/src/components/site/SiteFooter.tsx",
-          "operation": "modify",
-          "description": "Update the footer brand <img> to use `/assets/generated/inno-youth-logo-v2.dim_512x512.png` and ensure styling preserves aspect ratio (e.g., keep w-auto/object-contain with a fixed height) for crisp rendering across breakpoints."
+          "description": "Update the hardcoded team data so the member name string is “Benitta” instead of “Bennita”, without altering any other team member fields (role, bio, initials, ordering, or count)."
         }
       ]
     }

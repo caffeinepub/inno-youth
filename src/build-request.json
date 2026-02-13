@@ -1,41 +1,48 @@
 {
   "kind": "build_request",
-  "title": "Replace site logo with user-provided logo",
+  "title": "Correct team member name spelling (Bennita → Benitta)",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-6",
-      "text": "Replace the current INNO YOUTH logo asset with the user-provided uploaded logo, and update the site to render the new logo in all places where the logo appears (header and footer).",
+      "id": "REQ-8",
+      "text": "Update the Team section to display the team member name as “Benitta” (not “Bennita”).",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "recent-messages"
         ],
         "quotes": [
-          "change logo to this"
+          "change bennita to Benitta"
         ]
       },
       "acceptanceCriteria": [
-        "A new logo image file is added under `frontend/public/assets/generated/` based on the user-uploaded logo.",
-        "`frontend/src/components/site/SiteHeader.tsx` uses the new logo asset path for the header logo image.",
-        "`frontend/src/components/site/SiteFooter.tsx` uses the new logo asset path for the footer brand image.",
-        "The logo displays crisply and is not stretched (keeps aspect ratio) on mobile and desktop."
+        "In `frontend/src/components/site/sections/TeamSection.tsx`, the team member currently rendered as “Bennita” is changed to “Benitta”.",
+        "The Team section UI renders “Benitta” everywhere the member name is displayed.",
+        "No other team member names, roles, or bios are changed."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under `frontend/src/components/ui` (shadcn components are read-only).",
-    "Do not edit immutable hook/entry files listed in SYSTEM_CONTEXT (compose around them instead).",
-    "Keep the backend unchanged (no schema/state changes needed for a logo swap)."
+    "Do not edit any files under `frontend/src/components/ui` or other immutable paths listed in SYSTEM_CONTEXT.",
+    "Keep the backend single-actor architecture unchanged; no backend changes are required for this request."
   ],
   "nonGoals": [
-    "Rewriting site copy, changing layout, or updating other brand assets (hero image, icons) beyond the logo swap.",
-    "Adding new authentication, analytics, or third-party integrations."
+    "Changing any team roles, bios, ordering, or the number of team members.",
+    "Updating the contact form or any backend canister logic.",
+    "Changing the site theme, layout, or other section copy."
   ],
   "imageRequirements": {
-    "required": [
-      "INNO YOUTH logo with three abstract human figures (red/yellow/blue) and “INNO - YOUTH” text, transparent background (inno-youth-logo-v2.dim_512x512.png)"
-    ],
+    "required": [],
     "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
   }
 }

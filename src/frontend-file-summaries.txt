@@ -6,7 +6,7 @@
   "frontend/src/components/site/sections/AboutSection.tsx": "About section describing INNO YOUTH's mission, community, and approach through three value cards with icons.",
   "frontend/src/components/site/sections/WhatWeDoSection.tsx": "What We Do section showcasing three core pillars (Innovation, Community, Growth) with icon sprites and hover effects.",
   "frontend/src/components/site/sections/ProjectsSection.tsx": "Projects section displaying three activity cards (Tech Workshops, Innovation Challenges, Community Outreach) with icons, descriptions, and tags.",
-  "frontend/src/components/site/sections/TeamSection.tsx": "Team section featuring three team member cards with avatars, names, roles, and bios.",
+  "frontend/src/components/site/sections/TeamSection.tsx": "Team section featuring eight team member cards (Benitta as Captain, Adith as Vice Captain, and six Members) with avatars, names, roles, and bios displayed in a responsive grid layout.",
   "frontend/src/components/site/sections/ContactSection.tsx": "Contact section container that wraps the ContactForm component with heading and description.",
   "frontend/src/components/site/ContactForm.tsx": "Validated contact form with name, email, and message fields that submits to backend via React Query, shows loading states, and displays success confirmation.",
   "frontend/src/hooks/useSubmitContactForm.ts": "React Query mutation hook for submitting contact form data to the backend canister's submitContactForm method.",

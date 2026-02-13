@@ -2,11 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-replace-the-current-inno-youth-logo-asset-with-the-user-provided-uploaded-logo-and-update-the-site-to-render-the-new-logo-in-all-places-where-the-logo-appears-header-and-footer",
-      "featureTitle": "Replace the current INNO YOUTH logo asset with the user-provided uploaded logo, and update the site to render the new logo in all places where the logo appears (header and footer).",
+      "featureId": "feature-update-the-team-section-to-display-the-team-member-name-as-benitta-not-bennita",
+      "featureTitle": "Update the Team section to display the team member name as “Benitta” (not “Bennita”).",
       "files": [
-        "frontend/src/components/site/SiteFooter.tsx",
-        "frontend/src/components/site/SiteHeader.tsx"
+        "frontend/src/components/site/sections/TeamSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -16,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-6"
+        "REQ-8"
       ],
       "confidence": "high"
     }

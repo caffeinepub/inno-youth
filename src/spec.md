@@ -1,12 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the current INNO YOUTH site logo with the user-provided uploaded logo across the header and footer.
+**Goal:** Correct the spelling of a team member’s name in the Team section (Bennita → Benitta).
 
 **Planned changes:**
-- Add a new logo image file under `frontend/public/assets/generated/` based on the uploaded logo.
-- Update `frontend/src/components/site/SiteHeader.tsx` to use the new logo asset path.
-- Update `frontend/src/components/site/SiteFooter.tsx` to use the new logo asset path.
-- Ensure the logo renders crisply and maintains aspect ratio on both mobile and desktop.
+- Update the team member name string in `frontend/src/components/site/sections/TeamSection.tsx` from “Bennita” to “Benitta”.
+- Ensure the Team section renders “Benitta” everywhere that member’s name appears without changing any other team member details.
 
-**User-visible outcome:** The site shows the new INNO YOUTH logo in the header and footer without stretching or distortion.
+**User-visible outcome:** The Team section displays the member name as “Benitta” consistently across the site.

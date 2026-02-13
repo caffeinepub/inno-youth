@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 11,
   "summary": "Website project for INNO YOUTH, a youth-focused innovation project team focused on creating opportunities and building futures.",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- INNO YOUTH logo with three abstract human figures (red/yellow/blue) and “INNO - YOUTH” text, transparent background (inno-youth-logo-v2.dim_512x512.png)",
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-a-responsive-public-website-for-inno-youth-with-clear-english-copy-that-describes-the-group-as-a-youth-focused-innovation-project-team-that-creates-opportunities-and-builds-better-futures",
@@ -54,12 +53,40 @@
         "REQ-6"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-team-section-to-display-exactly-these-team-members-and-roles-bennita-captain-adith-vice-captain-devika-member-anami-member-esther-member-franil-member-roseviya-member-anamika-member",
+      "title": "Update the Team section to display exactly these team members and roles: Bennita (Captain), Adith (Vice captain), Devika (Member), anami (Member), esther (Member), franil (Member), roseviya (Member), Anamika (Member).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-team-section-to-display-the-team-member-name-as-benitta-not-bennita",
+      "title": "Update the Team section to display the team member name as “Benitta” (not “Bennita”).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Replace the current site logo with the user-provided logo asset (update header/footer rendering accordingly).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update the Team section to show the specified names and roles: Bennita (captain), Adith (Vice captain), Devika (member), anami (member), esther (member), franil (member), roseviya (member), Anamika (member).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Correct the Team section member name spelling from “Bennita” to “Benitta”.",
       "reqIds": [],
       "status": "pending"
     }
