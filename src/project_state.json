@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Website project for INNO YOUTH, a youth-focused innovation project team focused on creating opportunities and building futures.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- INNO YOUTH logo with three abstract human figures (red/yellow/blue) and “INNO - YOUTH” text, transparent background (inno-youth-logo-v2.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-public-website-for-inno-youth-with-clear-english-copy-that-describes-the-group-as-a-youth-focused-innovation-project-team-that-creates-opportunities-and-builds-better-futures",
+      "title": "Create a responsive public website for “INNO YOUTH” with clear English copy that describes the group as a youth-focused innovation project team that creates opportunities and builds better futures.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-single-page-layout-scrolling-sections-that-includes-at-minimum-hero-headline-short-tagline-about-mission-what-we-do-pillars-values-projects-activities-placeholder-cards-team-placeholder-member-cards-and-contact-section",
+      "title": "Implement a single-page layout (scrolling sections) that includes, at minimum: Hero (headline + short tagline), About/Mission, What We Do (pillars/values), Projects/Activities (placeholder cards), Team (placeholder member cards), and Contact section.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-form-that-collects-name-email-and-message-validates-required-fields-and-on-submit-stores-the-message-in-the-motoko-backend-canister-as-a-contact-submission",
+      "title": "Add a Contact form that collects name, email, and message, validates required fields, and on submit stores the message in the Motoko backend canister as a “contact submission”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-choose-and-apply-one-coherent-visual-theme-colors-typography-spacing-button-input-styles-appropriate-for-a-youth-innovation-organization-and-enforce-it-consistently-across-all-sections-avoid-a-blue-purple-primary-palette",
+      "title": "Choose and apply one coherent visual theme (colors, typography, spacing, button/input styles) appropriate for a youth innovation organization, and enforce it consistently across all sections. Avoid a blue/purple primary palette.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-required-static-images-in-the-frontend-at-frontend-public-assets-generated-and-render-them-in-the-website-logo-in-header-footer-hero-image-in-hero-section-small-icon-set-in-what-we-do",
+      "title": "Generate and include required static images in the frontend at `frontend/public/assets/generated/`, and render them in the website (logo in header/footer; hero image in hero section; small icon set in “What We Do”).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-inno-youth-logo-asset-with-the-user-provided-uploaded-logo-and-update-the-site-to-render-the-new-logo-in-all-places-where-the-logo-appears-header-and-footer",
+      "title": "Replace the current INNO YOUTH logo asset with the user-provided uploaded logo, and update the site to render the new logo in all places where the logo appears (header and footer).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Replace the current site logo with the user-provided logo asset (update header/footer rendering accordingly).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "INNO YOUTH",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
